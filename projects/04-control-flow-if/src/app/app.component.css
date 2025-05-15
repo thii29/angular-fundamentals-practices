@@ -25,6 +25,7 @@
 .card-number {
   font-family: "Roboto Mono", monospace;
   font-size: 1.5rem;
+  margin-bottom: 12px;
 }
 .card {
   width: 400px;
