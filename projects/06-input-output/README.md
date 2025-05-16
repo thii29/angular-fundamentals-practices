@@ -19,8 +19,7 @@ In this activity you'll learn:
 From the command line at the root of the project:
 
 ```bash
-ng serve 06-input-output
-```
+ ```
 
 ## Instructions
 
