@@ -10,7 +10,7 @@ import { ListingComponent } from "./listing/listing.component";
     <section class="container">
       <!-- This article element represents and entire listing -->
        @for (car of carList; track $index) {
-         <app-listing [car]="car"></app-listing>
+         <app-listing [car]="car" (carSaved)="addCarToSaved($event)"></app-listing>
        }
       <!-- end car listing markup -->
     </section>
@@ -54,4 +54,7 @@ export class AppComponent {
       transmission: 'Automatic',
     },
   ];
+  addCarToSaved(car : Car){
+    this.savedCarList.push(car)
+  }
 }
